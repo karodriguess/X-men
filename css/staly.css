@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Candal&family=Open+Sans:wght@500&family=Oxanium:wght@300;700&family=Shadows+Into+Light&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Oxanium", cursive;
+    background: black;
+    color: white;
+}
+body::before{
+    content: "";
+    background-image: url(../src/fundoblackwhite.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.2;
+}
+.logo{
+    height: 105px; 
+}
+ul{
+    list-style: none;
+}
+li{
+    cursor: pointer;
+}
+.cabecalho{
+    display: flex;
+    justify-content: center;
+}
+
+.selecao-de-personagens{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    min-height: calc(100vh - 152px);
+    justify-content: center;
+}
+.selecao-de-personagens .lista-de-personagens{
+     display: flex;
+     flex-wrap: wrap;
+     gap: 30px;
+     justify-content: center;
+}
+.selecao-de-personagens .personagens{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 585px;
+    gap: 25px;
+}
+.selecao-de-personagens .personagens .titulo{
+    font-size: 20px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #47f4ff;
+    width: 100%;
+    text-align: center;
+}
+.lista-de-personagens .personagens img{
+    width: 100%;
+    height: 100%;
+}
+.lista-de-personagens .personagem.selecionado{
+    box-shadow: 0px 0px 24px 5px #f1f1f1;
+}
+.personagem-selecionado{
+    text-align: center;
+    max-height:530px ;
+}
+.personagem-selecionado .personagem-grande{
+    width: 300px;
+    height: 300px;
+}
+.personagem-selecionado .nome-personagem{
+    border-bottom:  2px solid aqua;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-top: 7px;
+}
+.personagem-selecionado .descricao-personagem{
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    margin-top: 20px;
+    width: 420px; 
+}
